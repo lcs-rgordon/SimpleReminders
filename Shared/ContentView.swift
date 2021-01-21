@@ -13,7 +13,7 @@ struct ContentView: View {
     
     var body: some View {
         List(store.tasks) { task in
-            Text(task.description)
+            TaskCell(task: task)
         }
     }
 }

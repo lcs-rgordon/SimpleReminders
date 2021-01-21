@@ -9,6 +9,9 @@ import SwiftUI
 
 struct AddTaskView: View {
     
+    // The store, which the task will be appended to
+    @ObservedObject var store: TaskStore
+    
     // Details of the new task
     @State private var description = ""
     @State private var priority = TaskPriority.low
@@ -18,6 +21,7 @@ struct AddTaskView: View {
     
     var body: some View {
         NavigationView {
+            
             VStack {
                 Form {
                     TextField("Description", text: $description)
@@ -38,11 +42,18 @@ struct AddTaskView: View {
                     }
                 }
             }
+            
         }
         
     }
     
     func saveTask() {
+        
+        // Add the task to the list of tasks
+        store.tasks.append(Task(description: description,
+                                priority: priority,
+                                completed: false))
+        
         // Dismiss this view
         showing = false
     }
@@ -52,6 +63,6 @@ struct AddTaskView: View {
 
 struct AddTaskView_Previews: PreviewProvider {
     static var previews: some View {
-        AddTaskView(showing: .constant(true))
+        AddTaskView(store: testStore, showing: .constant(true))
     }
 }

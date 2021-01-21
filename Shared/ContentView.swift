@@ -13,7 +13,7 @@ struct ContentView: View {
     @ObservedObject var store: TaskStore
     
     // Controls whether the add task view is showing
-    @State private var showingAddTaskView = false
+    @State private var showingAddTask = false
     
     var body: some View {
         List(store.tasks) { task in
@@ -23,12 +23,12 @@ struct ContentView: View {
         .toolbar {
             ToolbarItem(placement: .primaryAction) {
                 Button("Add") {
-                    showingAddTaskView = true
+                    showingAddTask = true
                 }
             }
         }
-        .sheet(isPresented: $showingAddTaskView) {
-            AddTaskView(store: store, showing: $showingAddTaskView)
+        .sheet(isPresented: $showingAddTask) {
+            AddTask(store: store, showing: $showingAddTask)
         }
     }
 }

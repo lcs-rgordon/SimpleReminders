@@ -1,5 +1,5 @@
 //
-//  AddTaskView.swift
+//  AddTask.swift
 //  SimpleReminders
 //
 //  Created by Russell Gordon on 2021-01-20.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AddTaskView: View {
+struct AddTask: View {
     
     // The store, which the task will be appended to
     @ObservedObject var store: TaskStore
@@ -61,8 +61,8 @@ struct AddTaskView: View {
     
 }
 
-struct AddTaskView_Previews: PreviewProvider {
+struct AddTask_Previews: PreviewProvider {
     static var previews: some View {
-        AddTaskView(store: testStore, showing: .constant(true))
+        AddTask(store: testStore, showing: .constant(true))
     }
 }

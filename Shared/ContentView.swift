@@ -30,6 +30,16 @@ struct ContentView: View {
         .sheet(isPresented: $showingAddTask) {
             AddTask(store: store, showing: $showingAddTask)
         }
+        .onReceive(NotificationCenter.default.publisher(for: UIApplication.willResignActiveNotification)) { _ in
+            
+            let encoder = JSONEncoder()
+            if let encoded = try? encoder.encode(store.tasks) {
+                print("saving")
+                UserDefaults.standard.setValue(encoded, forKey: "tasks")
+            }
+
+        }
+
     }
 }
 

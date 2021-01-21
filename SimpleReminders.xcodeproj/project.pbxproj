@@ -13,6 +13,12 @@
 		81D3C4EB25B8FA7900EEA970 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D3C4D625B8FA7800EEA970 /* ContentView.swift */; };
 		81D3C4EC25B8FA7900EEA970 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81D3C4D725B8FA7900EEA970 /* Assets.xcassets */; };
 		81D3C4ED25B8FA7900EEA970 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81D3C4D725B8FA7900EEA970 /* Assets.xcassets */; };
+		81D3C4F925B8FB0D00EEA970 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D3C4F825B8FB0D00EEA970 /* Task.swift */; };
+		81D3C4FA25B8FB0D00EEA970 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D3C4F825B8FB0D00EEA970 /* Task.swift */; };
+		81D3C4FE25B8FB4400EEA970 /* TaskPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D3C4FD25B8FB4400EEA970 /* TaskPriority.swift */; };
+		81D3C4FF25B8FB4400EEA970 /* TaskPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D3C4FD25B8FB4400EEA970 /* TaskPriority.swift */; };
+		81D3C50325B8FC4600EEA970 /* TaskStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D3C50225B8FC4600EEA970 /* TaskStore.swift */; };
+		81D3C50425B8FC4600EEA970 /* TaskStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D3C50225B8FC4600EEA970 /* TaskStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,9 @@
 		81D3C4E425B8FA7900EEA970 /* SimpleReminders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleReminders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81D3C4E625B8FA7900EEA970 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81D3C4E725B8FA7900EEA970 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		81D3C4F825B8FB0D00EEA970 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		81D3C4FD25B8FB4400EEA970 /* TaskPriority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskPriority.swift; sourceTree = "<group>"; };
+		81D3C50225B8FC4600EEA970 /* TaskStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +69,9 @@
 				81D3C4D525B8FA7800EEA970 /* SimpleRemindersApp.swift */,
 				81D3C4D625B8FA7800EEA970 /* ContentView.swift */,
 				81D3C4D725B8FA7900EEA970 /* Assets.xcassets */,
+				81D3C4F825B8FB0D00EEA970 /* Task.swift */,
+				81D3C4FD25B8FB4400EEA970 /* TaskPriority.swift */,
+				81D3C50225B8FC4600EEA970 /* TaskStore.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -187,7 +199,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81D3C50325B8FC4600EEA970 /* TaskStore.swift in Sources */,
 				81D3C4EA25B8FA7900EEA970 /* ContentView.swift in Sources */,
+				81D3C4F925B8FB0D00EEA970 /* Task.swift in Sources */,
+				81D3C4FE25B8FB4400EEA970 /* TaskPriority.swift in Sources */,
 				81D3C4E825B8FA7900EEA970 /* SimpleRemindersApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,7 +211,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81D3C50425B8FC4600EEA970 /* TaskStore.swift in Sources */,
 				81D3C4EB25B8FA7900EEA970 /* ContentView.swift in Sources */,
+				81D3C4FA25B8FB0D00EEA970 /* Task.swift in Sources */,
+				81D3C4FF25B8FB4400EEA970 /* TaskPriority.swift in Sources */,
 				81D3C4E925B8FA7900EEA970 /* SimpleRemindersApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

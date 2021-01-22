@@ -69,14 +69,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		816F5CB025BA52DF0031B052 /* View */ = {
+		816F5CB025BA52DF0031B052 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				81D3C51425B9079A00EEA970 /* AddTask.swift */,
 				81D3C4D625B8FA7800EEA970 /* ContentView.swift */,
 				81D3C50925B8FDF300EEA970 /* TaskCell.swift */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		81D3C4CF25B8FA7800EEA970 = {
@@ -93,7 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				81D3C4D525B8FA7800EEA970 /* SimpleRemindersApp.swift */,
-				816F5CB025BA52DF0031B052 /* View */,
+				816F5CB025BA52DF0031B052 /* Views */,
 				816F5CAF25BA52C20031B052 /* Model */,
 				81D3C4D725B8FA7900EEA970 /* Assets.xcassets */,
 			);

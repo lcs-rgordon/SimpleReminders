@@ -21,8 +21,8 @@
 		81D3C50425B8FC4600EEA970 /* TaskStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D3C50225B8FC4600EEA970 /* TaskStore.swift */; };
 		81D3C50A25B8FDF300EEA970 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D3C50925B8FDF300EEA970 /* TaskCell.swift */; };
 		81D3C50B25B8FDF300EEA970 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D3C50925B8FDF300EEA970 /* TaskCell.swift */; };
-		81D3C51525B9079A00EEA970 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D3C51425B9079A00EEA970 /* AddTaskView.swift */; };
-		81D3C51625B9079A00EEA970 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D3C51425B9079A00EEA970 /* AddTaskView.swift */; };
+		81D3C51525B9079A00EEA970 /* AddTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D3C51425B9079A00EEA970 /* AddTask.swift */; };
+		81D3C51625B9079A00EEA970 /* AddTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D3C51425B9079A00EEA970 /* AddTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +38,7 @@
 		81D3C4FD25B8FB4400EEA970 /* TaskPriority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskPriority.swift; sourceTree = "<group>"; };
 		81D3C50225B8FC4600EEA970 /* TaskStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStore.swift; sourceTree = "<group>"; };
 		81D3C50925B8FDF300EEA970 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
-		81D3C51425B9079A00EEA970 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		81D3C51425B9079A00EEA970 /* AddTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +59,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		816F5CAF25BA52C20031B052 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				81D3C4F825B8FB0D00EEA970 /* Task.swift */,
+				81D3C4FD25B8FB4400EEA970 /* TaskPriority.swift */,
+				81D3C50225B8FC4600EEA970 /* TaskStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		816F5CB025BA52DF0031B052 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				81D3C51425B9079A00EEA970 /* AddTask.swift */,
+				81D3C4D625B8FA7800EEA970 /* ContentView.swift */,
+				81D3C50925B8FDF300EEA970 /* TaskCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		81D3C4CF25B8FA7800EEA970 = {
 			isa = PBXGroup;
 			children = (
@@ -73,13 +93,9 @@
 			isa = PBXGroup;
 			children = (
 				81D3C4D525B8FA7800EEA970 /* SimpleRemindersApp.swift */,
-				81D3C4D625B8FA7800EEA970 /* ContentView.swift */,
-				81D3C51425B9079A00EEA970 /* AddTaskView.swift */,
-				81D3C50925B8FDF300EEA970 /* TaskCell.swift */,
+				816F5CB025BA52DF0031B052 /* View */,
+				816F5CAF25BA52C20031B052 /* Model */,
 				81D3C4D725B8FA7900EEA970 /* Assets.xcassets */,
-				81D3C4FD25B8FB4400EEA970 /* TaskPriority.swift */,
-				81D3C4F825B8FB0D00EEA970 /* Task.swift */,
-				81D3C50225B8FC4600EEA970 /* TaskStore.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -208,7 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81D3C50325B8FC4600EEA970 /* TaskStore.swift in Sources */,
-				81D3C51525B9079A00EEA970 /* AddTaskView.swift in Sources */,
+				81D3C51525B9079A00EEA970 /* AddTask.swift in Sources */,
 				81D3C50A25B8FDF300EEA970 /* TaskCell.swift in Sources */,
 				81D3C4EA25B8FA7900EEA970 /* ContentView.swift in Sources */,
 				81D3C4F925B8FB0D00EEA970 /* Task.swift in Sources */,
@@ -222,7 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81D3C50425B8FC4600EEA970 /* TaskStore.swift in Sources */,
-				81D3C51625B9079A00EEA970 /* AddTaskView.swift in Sources */,
+				81D3C51625B9079A00EEA970 /* AddTask.swift in Sources */,
 				81D3C50B25B8FDF300EEA970 /* TaskCell.swift in Sources */,
 				81D3C4EB25B8FA7900EEA970 /* ContentView.swift in Sources */,
 				81D3C4FA25B8FB0D00EEA970 /* Task.swift in Sources */,

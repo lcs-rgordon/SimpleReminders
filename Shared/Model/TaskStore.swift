@@ -42,7 +42,7 @@ class TaskStore: ObservableObject {
                 self.tasks = []
             }
             return
-
+            
         } else {
             
             // If nothing could be loaded from the app bundle, or data could not be decoded, show an whatever was passed in to the initializer
@@ -52,31 +52,51 @@ class TaskStore: ObservableObject {
         
     }
     
-    // Return a list of tasks that contain the search term
-    func filteredTasks(basedUpon searchTerm: String) -> [Task] {
+    // Return a list of tasks that has the selected priority level
+    func filteredTasks(with priorityLevel: String) -> [Task] {
         
-        // Create an empty list of tasks that match the search term
-        var matchingTasks: [Task] = []
-        
-        // If there is nothing to search for...
-        if searchTerm.isEmpty {
-            // ... just return the complete list of tasks
+        if priorityLevel == noSpecifiedPriorityLevel {
+            
+            // Return all the tasks
             return tasks
+            
         } else {
+            
+            // Create an empty list of tasks that match the search term
+            var matchingTasks: [Task] = []
+            
+            // Translate the given priority level (as a string) back into an enumeration value
+            var givenPriority = TaskPriority.low
+            switch priorityLevel {
+            case TaskPriority.low.rawValue:
+                givenPriority = TaskPriority.low
+            case TaskPriority.medium.rawValue:
+                givenPriority = TaskPriority.medium
+            case TaskPriority.high.rawValue:
+                givenPriority = TaskPriority.high
+            default:
+                break
+            }
+            
             // Iterate through all the tasks
             for task in tasks {
-                if task.description.contains(searchTerm) {
+                
+                // ... but when a priority level is specified...
+                if task.priority == givenPriority {
+                    
+                    // ... only add tasks that match that priority level to the list that is returned
                     matchingTasks.append(task)
                 }
+                
             }
             
             // Return the list of matching tasks
             return matchingTasks
+
         }
         
     }
     
-
 }
 
 let testStore = TaskStore(tasks: testData)

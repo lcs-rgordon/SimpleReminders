@@ -15,6 +15,9 @@ struct ContentView: View {
     // What the user is searching for
     @State private var searchText: String = ""
     
+    // What to filter upon
+    @State private var selectedPriorityLevel = noSpecifiedPriorityLevel
+
     // Controls whether the add task view is showing
     @State private var showingAddTask = false
     
@@ -22,10 +25,20 @@ struct ContentView: View {
         
         VStack {
             
-            SearchBarView(text: $searchText)
-                .padding(.top, 20)
+            Text("Filter by...".uppercased())
+                .font(.caption)
+                .foregroundColor(.secondary)
             
-            List(store.filteredTasks(basedUpon: searchText)) { task in
+            Picker("Priority", selection: $selectedPriorityLevel) {
+                Text(noSpecifiedPriorityLevel).tag(noSpecifiedPriorityLevel)
+                Text(TaskPriority.low.rawValue).tag(TaskPriority.low.rawValue)
+                Text(TaskPriority.medium.rawValue).tag(TaskPriority.medium.rawValue)
+                Text(TaskPriority.high.rawValue).tag(TaskPriority.high.rawValue)
+            }
+            .pickerStyle(SegmentedPickerStyle())
+            .padding(.horizontal)
+
+            List(store.filteredTasks(with: selectedPriorityLevel)) { task in
                 TaskCell(task: task)
             }
             .navigationTitle("Reminders")

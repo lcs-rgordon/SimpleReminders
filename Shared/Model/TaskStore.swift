@@ -51,6 +51,32 @@ class TaskStore: ObservableObject {
         }
         
     }
+    
+    // Return a list of tasks that contain the search term
+    func filteredTasks(basedUpon searchTerm: String) -> [Task] {
+        
+        // Create an empty list of tasks that match the search term
+        var matchingTasks: [Task] = []
+        
+        // If there is nothing to search for...
+        if searchTerm.isEmpty {
+            // ... just return the complete list of tasks
+            return tasks
+        } else {
+            // Iterate through all the tasks
+            for task in tasks {
+                if task.description.contains(searchTerm) {
+                    matchingTasks.append(task)
+                }
+            }
+            
+            // Return the list of matching tasks
+            return matchingTasks
+        }
+        
+    }
+    
+
 }
 
 let testStore = TaskStore(tasks: testData)

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		819DA34225EC3B2400272C39 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819DA34125EC3B2400272C39 /* SearchBarView.swift */; };
+		819DA34325EC3B2400272C39 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819DA34125EC3B2400272C39 /* SearchBarView.swift */; };
 		81D3C4E825B8FA7900EEA970 /* SimpleRemindersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D3C4D525B8FA7800EEA970 /* SimpleRemindersApp.swift */; };
 		81D3C4E925B8FA7900EEA970 /* SimpleRemindersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D3C4D525B8FA7800EEA970 /* SimpleRemindersApp.swift */; };
 		81D3C4EA25B8FA7900EEA970 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D3C4D625B8FA7800EEA970 /* ContentView.swift */; };
@@ -26,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		819DA34125EC3B2400272C39 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		81D3C4D525B8FA7800EEA970 /* SimpleRemindersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRemindersApp.swift; sourceTree = "<group>"; };
 		81D3C4D625B8FA7800EEA970 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		81D3C4D725B8FA7900EEA970 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,6 +78,7 @@
 				81D3C51425B9079A00EEA970 /* AddTask.swift */,
 				81D3C4D625B8FA7800EEA970 /* ContentView.swift */,
 				81D3C50925B8FDF300EEA970 /* TaskCell.swift */,
+				819DA34125EC3B2400272C39 /* SearchBarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -227,6 +231,7 @@
 				81D3C51525B9079A00EEA970 /* AddTask.swift in Sources */,
 				81D3C50A25B8FDF300EEA970 /* TaskCell.swift in Sources */,
 				81D3C4EA25B8FA7900EEA970 /* ContentView.swift in Sources */,
+				819DA34325EC3B2400272C39 /* SearchBarView.swift in Sources */,
 				81D3C4F925B8FB0D00EEA970 /* Task.swift in Sources */,
 				81D3C4FE25B8FB4400EEA970 /* TaskPriority.swift in Sources */,
 				81D3C4E825B8FA7900EEA970 /* SimpleRemindersApp.swift in Sources */,
@@ -241,6 +246,7 @@
 				81D3C51625B9079A00EEA970 /* AddTask.swift in Sources */,
 				81D3C50B25B8FDF300EEA970 /* TaskCell.swift in Sources */,
 				81D3C4EB25B8FA7900EEA970 /* ContentView.swift in Sources */,
+				819DA34225EC3B2400272C39 /* SearchBarView.swift in Sources */,
 				81D3C4FA25B8FB0D00EEA970 /* Task.swift in Sources */,
 				81D3C4FF25B8FB4400EEA970 /* TaskPriority.swift in Sources */,
 				81D3C4E925B8FA7900EEA970 /* SimpleRemindersApp.swift in Sources */,
